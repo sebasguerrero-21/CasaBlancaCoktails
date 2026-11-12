@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Casa Blanca Cocktails. Cócteles preparados para darle un toque especial a tus momentos.">
+  <title>Casa Blanca Cocktails</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+  <header class="header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Casa Blanca Cocktails, inicio">
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="#inicio">inicio</a>
+      <a href="#cocteles">cócteles</a>
+      <a href="#nosotros">nosotros</a>
+      <a href="#contacto">contacto</a>
+    </nav>
+    <button class="cart-toggle" id="cartToggle" type="button" aria-label="Abrir carrito" aria-controls="cartDrawer" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a1.5 1.5 0 0 0 1.5 1.2h8.1a1.5 1.5 0 0 0 1.5-1.1L20 8H6.2"/><circle cx="9.5" cy="19.5" r="1.2"/><circle cx="17" cy="19.5" r="1.2"/></svg>
+      <span class="cart-count" id="cartCount" hidden>0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">UNA EXPERIENCIA PARA DISFRUTAR</p>
+        <h1>El arte de<br><em>compartir</em></h1>
+        <p class="hero-copy">Sabores únicos, momentos especiales.</p>
+        <a class="button button-gold" href="#cocteles">descubre nuestros cócteles</a>
+         <div class="hero-logo">
+        <img src="Img/logod.png" alt="Casa Blanca Cocktails">
+        </div>
+      </div>
+      <span class="hero-mark">CASA BLANCA · COCKTAILS</span>
+    </section>
+
+    <!-- MARQUEE EDITABLE: cambia el texto que aparece dentro de .marquee-track -->
+    <div class="marquee" aria-label="Mensaje de Casa Blanca Cocktails">
+      <div class="marquee-track">
+        <span> - COMO SOLO PABLO ARENAS LO SABE HACER - COMO SOLO PABLO ARENAS LO SABE HACER </span>
+        <span aria-hidden="true"> - COMO SOLO PABLO ARENAS LO SABE HACER - COMO SOLO PABLO ARENAS LO SABE HACER </span>
+      </div>
+    </div>
+
+    <section class="section cocktails-section" id="cocteles">
+      <div class="section-heading">
+        <p class="eyebrow">NUESTRA SELECCIÓN</p>
+        <h2>Un sabor para <em>cada momento</em></h2>
+        <p>Descubre nuestra variedad de cócteles y encuentra tu favorito.</p>
+      </div>
+
+      <div class="cocktail-grid">
+        <!-- Para agregar tus fotos, guarda cada imagen en la carpeta img y cambia el valor de src. -->
+        <!-- PRECIOS: escribe el precio en data-price de cada <article>, solo el número (ej. data-price="18000"). Si lo dejas vacío, el carrito funciona sin precios. -->
+        <!-- Para agregar un cóctel nuevo, copia un <article> completo: el botón "agregar" se crea solo. -->
+        <article class="cocktail-card" data-price="">
+          <div class="cocktail-photo"><img src="Img/coco.jpeg" alt="Cóctel Buchanas Coco" onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"><span>AGREGA TU FOTO</span></div>
+          <div class="card-info"><p class="card-number">01 / CASA BLANCA</p><h3>Buchanas Coco</h3><p>Un toque suave y tropical.</p></div>
+        </article>
+        <article class="cocktail-card" data-price="">
+          <div class="cocktail-photo"><img src="Img/piña.jpeg" alt="Cóctel Buchanas Piña" onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"><span>AGREGA TU FOTO</span></div>
+          <div class="card-info"><p class="card-number">02 / CASA BLANCA</p><h3>Buchanas Piña</h3><p>Notas frutales con esencia tropical.</p></div>
+        </article>
+        <article class="cocktail-card" data-price="">
+          <div class="cocktail-photo"><img src="Img/maracuya.jpeg" alt="Buchana Master con maracuyá" onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"><span>AGREGA TU FOTO</span></div>
+          <div class="card-info"><p class="card-number">03 / CASA BLANCA</p><h3>Buchana Master con maracuyá</h3><p>Un contraste frutal y especial.</p></div>
+        </article>
+        <article class="cocktail-card" data-price="">
+          <div class="cocktail-photo"><img src="Img/rose.jpeg" alt="Cóctel Tequila Rose" onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"><span>AGREGA TU FOTO</span></div>
+          <div class="card-info"><p class="card-number">04 / CASA BLANCA</p><h3>Tequila Rose</h3><p>Dulce, cremoso y delicado.</p></div>
+        </article>
+        <article class="cocktail-card" data-price="">
+          <div class="cocktail-photo"><img src="Img/mojito.jpeg" alt="Cóctel Bacardi Mojito" onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"><span>AGREGA TU FOTO</span></div>
+          <div class="card-info"><p class="card-number">05 / CASA BLANCA</p><h3>Bacardi Mojito</h3><p>Frescura cítrica en cada sorbo.</p></div>
+        </article>
+        <article class="cocktail-card" data-price="">
+          <div class="cocktail-photo"><img src="Img/cafe.jpeg" alt="Cóctel de café" onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"><span>AGREGA TU FOTO</span></div>
+          <div class="card-info"><p class="card-number">06 / CASA BLANCA</p><h3>Café</h3><p>Un sabor intenso para paladares curiosos.</p></div>
+        </article>
+        <article class="cocktail-card" data-price="">
+          <div class="cocktail-photo"><img src="Img/maracumango.jpeg" alt="Cóctel Maracumango con aguardiente amarillo" onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')"><span>AGREGA TU FOTO</span></div>
+          <div class="card-info"><p class="card-number">07 / CASA BLANCA</p><h3>Maracumango con aguardiente amarillo</h3><p>Una mezcla tropical llena de carácter.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="nosotros">
+      <div class="about-logo"><img src="Img/logod.png" alt="Casa Blanca Cocktails"></div>
+      <div class="about-copy">
+        <p class="eyebrow">EL DETALLE ESTÁ EN EL SABOR</p>
+        <h2>Momentos que<br><em>merecen brindar.</em></h2>
+        <p>En Casa Blanca Cocktails creemos que cada encuentro puede convertirse en un recuerdo especial. Por eso reunimos sabores y combinaciones para acompañar tus mejores momentos.</p>
+        <a class="text-link" href="#contacto">hablemos de tu próximo brindis <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <p class="eyebrow">ESTAMOS PARA ATENDERTE</p>
+      <h2>¿Cuál será tu <em>favorito?</em></h2>
+      <p>Escríbenos y conoce más sobre nuestra selección.</p>
+      <div class="social-buttons">
+        <!-- REEMPLAZA los enlaces # por tu enlace real de WhatsApp e Instagram -->
+        <a class="button button-gold" id="whatsappLink" href=https://wa.link/c9pakb target="_blank" rel="noopener"> <span>✆</span> whatsapp</a>
+        <a class="button button-outline" id="instagramLink" href="https://www.instagram.com/casa_blanca_cocktails?srtk=dGg4djB5a2ZxZnZn" target="_blank" rel="noopener"><span>◎</span> instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="footer-name">CASA BLANCA <span>COCKTAILS</span></a>
+    <p>© 2026 Casa Blanca Cocktails. Todos los derechos reservados.</p>
+    <p class="responsible">Disfruta con responsabilidad. Producto exclusivo para mayores de 18 años.</p>
+  </footer>
+
+  <!-- CARRITO DE COMPRAS -->
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-labelledby="cartTitle" tabindex="-1">
+    <div class="cart-head">
+      <h2 id="cartTitle">Tu pedido</h2>
+      <button class="cart-close" id="cartClose" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <p class="cart-empty" id="cartEmpty">Tu carrito está vacío.<br>Agrega tus cócteles favoritos.</p>
+      <ul class="cart-list" id="cartList"></ul>
+    </div>
+    <div class="cart-foot" id="cartFoot" hidden>
+      <div class="cart-total" id="cartTotalRow" hidden><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <label class="cart-field">Tu nombre
+        <input type="text" id="cartName" placeholder="¿A nombre de quién?" autocomplete="name">
+      </label>
+      <label class="cart-field">Dirección o notas (opcional)
+        <textarea id="cartNotes" rows="2" placeholder="Dirección de entrega, hora, indicaciones…"></textarea>
+      </label>
+      <button class="button button-gold cart-send" id="cartSend" type="button"><span>✆</span> finalizar pedido por whatsapp</button>
+      <button class="cart-clear" id="cartClear" type="button">vaciar carrito</button>
+    </div>
+  </aside>
+
+  <script src="Java Script/script.js"></script>
+</body>
+</html>
