@@ -251,7 +251,7 @@ mainNav.querySelectorAll("a").forEach((link) => {
 
   // ---------- finalizar pedido por WhatsApp ----------
   function buildMessage() {
-    const lines = [`Hola ${NEGOCIO} 👋, quisiera hacer este pedido:`, ""];
+    const lines = [`Hola ${NEGOCIO} , quisiera hacer este pedido:`, ""];
     cart.forEach((i) => {
       const sub = i.price > 0 ? ` — ${money.format(i.price * i.qty)}` : "";
       lines.push(`• ${i.qty} x ${i.name}${sub}`);
